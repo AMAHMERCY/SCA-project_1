@@ -233,11 +233,11 @@ border-radius: 10px;
         }
         .home p{
             width: 150px;
-            font-size: 1rem;
+            font-size: 1vw;
         }
         .about p{
             width: 150px;
-            font-size: 1rem;
+            font-size: 1vw;
         }
         .contact-section{
             background-size:cover ;
