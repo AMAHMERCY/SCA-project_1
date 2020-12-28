@@ -194,14 +194,10 @@ border-radius: 10px;
         main{
             width: 100%;
             max-width: 100%;
-        }
         
-      nav img{
-            display: none;
         }
         .nav_links{
-            margin-right:40px;
-            /* font-size: 4px; */
+        display: none;
         }
         li{
             font-size: 10px;
