@@ -1,0 +1,305 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:white;
+    /* overflow: hidden; */
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color:rgb(240, 25, 25);
+    position: fixed;
+    width: 100%;
+}
+img{
+    width: 20%;
+    cursor: pointer;
+}
+.nav_links{
+    display: flex;
+    padding: 12px;
+}
+li{
+    list-style: none;
+    padding: 12px;
+    color: blue;
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+color: white;
+}
+/* HERO SECTION */
+.home{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15%;
+    /* margin-top: 4rem; */
+}
+h1{
+    font-size: 2rem;
+    color:red;
+}
+.home p{
+    width: 500px;
+    color: black;
+    font-size:1.5rem ;
+    padding-top: 1rem;
+}
+.home .btn-danger{
+    display: inline-block;
+  border: 2px solid red;
+  background-color: red;
+  font-size: 1.6rem;
+  border-radius: 50px;
+  cursor: pointer;  
+  padding:0.5rem  1.5rem;
+  margin-top: 3rem;
+
+}
+
+.home img{
+    width: 240px;
+border: 2px dotted red;
+border-radius: 50%;
+}
+    /* ABOUT ME SECTION */
+    h2{
+        text-align: center;
+        font-size: 2vw;
+        color: red;
+        margin: 5rem;
+        text-transform: capitalize;
+    }
+    .about{
+        display: flex;
+        justify-content: space-around;
+        /* align-items: center; */
+        /* margin: 3rem; */
+    }
+    .about p{
+        width: 500px;
+        color: black;
+
+        font-size:1.5rem ;
+        padding-top: 3rem;
+    }
+    .grid_container{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 2rem;
+    }
+    .grid_container img{
+        width: 90px;
+border-radius: 10px;
+
+    }
+    .grid_container img:hover{
+        transform: scale(1.5);
+    }
+    .grid-item{
+        /* margin: 2rem; */
+        padding: 2rem;
+    }
+    /* my works section */
+    .works-a{
+        display: flex;
+        justify-content: center;
+    }
+    .works-a img{
+        width: 260px;
+        padding: 0px 0 0 35px;
+    
+    }
+    h3{
+        margin-left:38px ;
+        font-size: 25px;
+        padding-bottom: 28px;
+    
+    }
+    h3 a{
+        color: black;
+        font-size: 28px;
+    }
+    h3 a:hover{
+        color: #000;
+    }
+    /* contact section */
+    .contact-section{
+        background-image: url("image/coffee.jpg");
+        background-size: cover;
+        height: 470px;
+        width: 100%;
+    }
+    .contact-header{
+        font-size: 2.4rem;
+        color:red;
+        text-align: center;
+    }
+    .contact-link{
+        display: flex;
+        justify-content: center;
+        color: red;
+    }
+    #fab{
+        padding-left: 22px;
+        font-size: 3vw;
+        color: white;
+        /* background-color: black; */
+    }
+    
+    .contact-header h2{
+        font-size: 3rem;
+        padding-top: 4rem;
+    }
+     
+    #fas{
+        font-size: 5rem;
+        position:absolute;
+        /* top:45%; */
+        left:45%;
+    
+    }
+    h4{
+        text-align: center;
+        font-size: 3vw;
+        padding-top:4rem;
+        padding-bottom:2.5rem ;
+    }
+    /* footer section */
+    footer{
+        display: flex;
+        justify-content: space-around;
+       background-color: gray;
+        padding-bottom: 2rem;
+        padding-top: 3rem;
+        color: white;
+        font-size: 1.3vw;
+        width:100% ;
+
+    }
+    footer img{
+        width: 250px;
+    }
+    /* mobile view */
+    @media screen and (max-width:480px){
+        main{
+            width: 100%;
+            max-width: 100%;
+        }
+        
+      nav img{
+            display: none;
+        }
+        .nav_links{
+            margin-right:50px;
+            /* font-size: 4px; */
+        }
+        li{
+            font-size: 20px;
+        }
+        .home{
+            flex-direction: column;
+            padding-top: 5rem;
+            padding-left:1rem ;
+        }
+        .home img{
+            display: none;
+        }
+        h1{
+            width: 300px;
+        }
+        h2{
+            text-align: center;
+            font-size: 2rem;
+        }
+        .about{
+        flex-direction: column;
+        padding-left: 2rem;
+        }
+        .works-a{
+            flex-direction: column;
+        }
+        .home p{
+            width: 300px;
+            font-size: 3vw;
+        }
+        .about p{
+            width: 300px;
+            font-size: 3vw;
+        }
+        .contact-section{
+            background-size:cover ;
+            width: 100%;
+            height: auto;
+        }
+        .contact-p{
+            width: 300px;
+            margin: 0 auto;
+        }
+        
+        h4{
+            font-size: 1rem;
+            padding-top: 5rem;
+        }
+        footer{
+            flex-direction: column;
+            width: 100%;
+        }
+        footer img{
+            margin-left:3rem ;
+        }
+        footer p{
+            margin-left:3rem ;
+            font-size: 1.3rem;
+        }
+    }
+    /* tablet view */
+@media screen and (max-width: 767px){
+li{
+font-size: 25px;
+}
+h1{
+    font-size: 2rem;
+}
+h2{ 
+    font-size: 2rem;
+}
+.home p{
+    font-size: 1.5rem;
+    width: 360px;
+}
+.home img{
+    width: 190px;
+    margin-top:2rem ;
+}
+.about p{
+    font-size: 1.5rem;
+    width: 360px;
+    margin-left: 0.7rem;
+}
+.works-a img{
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    padding: 0px 0 0 26px;
+}
+#fab{
+    font-size: 3rem;
+}
+#fas{
+font-size: 4rem;
+
+}
+footer p{
+    font-size: 1.5rem;
+}
+}
